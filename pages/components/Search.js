@@ -29,7 +29,7 @@ export default function Search() {
             setID(videoId)
 
             // Step 1: Fetch video details from your Next.js API route
-            const response = await axios.get(`https://65169a2de86e995c5823df76--golden-florentine-44a00f.netlify.app/api/youtube?videoId=${videoId}`);
+            const response = await axios.get(`/api/youtube?videoId=${videoId}`);
             const { videoInfo, videoFormats } = response.data;
 
             setVideoDetails(videoInfo);
